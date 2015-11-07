@@ -19,6 +19,9 @@ int main()
 
 	vec4 c = a * b;
 
+	mat4 position = mat4::translation(vec3(2, 3, 4));
+	position *= mat4::identity();
+
 	while (!window.closed())
 	{
 		window.clear();
